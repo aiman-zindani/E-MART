@@ -1,0 +1,81 @@
+.mainheading{
+    font-size: larger;
+text-align: center;
+font-family:'Times New Roman', Times, serif    
+
+}
+
+/* items */
+.main{
+    box-sizing: border-box;
+       padding:8px  2%;
+    display:grid;
+    /* grid-template-columns:133px 133px 133px 133px;
+     */
+     grid-template-columns: repeat(4,1fr);
+    grid-template-rows:133px 133px ;
+column-gap: 10px;
+row-gap: 500px;
+
+grid-template-columns:
+/* minmax(100px, max-content) */
+repeat(auto-fit,
+ /* 200px)  */
+/* 20%; */
+
+}
+.sec {
+    /* padding: 10px 5%; */
+    /* display: grid; */
+    /* grid-column: col; */
+    /* grid-template-columns:133px 133px 133px */
+}
+.sec .items{
+    /* grid-column:none; */
+   
+}
+.items .card {
+    width: 400px;
+    background: rgb(248, 243, 243);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.items .card .desc {
+    padding: 5px 20px;
+
+    opacity: 0.8;
+}
+.items .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(63, 63, 63);
+    padding:0 20px;
+}
+.items .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+;
+padding: 20px;
+}
+.items .card .box .price{
+    font-size: 20px;
+    font-weight:bold ;
+    color: tomato;
+}
+.items .card .box  .btn{
+    font-size: 13px;
+    color: tomato;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid tomato;
+border-radius: 20px;
+}
+.items .card .box  .btn:hover{cursor: pointer;
+    background-color: tomato;
+    color: aliceblue;
+
+}

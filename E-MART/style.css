@@ -4,36 +4,24 @@ text-align: center;
 font-family:'Times New Roman', Times, serif    
 
 }
+/* header
+ */
+
 
 /* items */
-.main{
+.main{background-color: rgb(255, 255, 255);
     box-sizing: border-box;
-       padding:8px  2%;
+       padding:10px  5%;
     display:grid;
-    /* grid-template-columns:133px 133px 133px 133px;
-     */
-     grid-template-columns: repeat(4,1fr);
-    grid-template-rows:133px 133px ;
+  
+     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 column-gap: 10px;
-row-gap: 500px;
-
-grid-template-columns:
-/* minmax(100px, max-content) */
-repeat(auto-fit,
- /* 200px)  */
-/* 20%; */
+row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 
 }
-.sec {
-    /* padding: 10px 5%; */
-    /* display: grid; */
-    /* grid-column: col; */
-    /* grid-template-columns:133px 133px 133px */
-}
-.sec .items{
-    /* grid-column:none; */
-   
-}
+
+
 .items .card {
     width: 400px;
     background: rgb(248, 243, 243);
@@ -64,18 +52,23 @@ padding: 20px;
 .items .card .box .price{
     font-size: 20px;
     font-weight:bold ;
-    color: tomato;
+    color: rgb(245, 165, 245);
 }
 .items .card .box  .btn{
     font-size: 13px;
-    color: tomato;
+    color: rgb(245, 165, 245);
     padding: 10px 18px;
     font-weight: 900;
-    border: 1px solid tomato;
+    border: 1px solid rgb(245, 165, 245);
 border-radius: 20px;
 }
 .items .card .box  .btn:hover{cursor: pointer;
     background-color: tomato;
     color: aliceblue;
 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
